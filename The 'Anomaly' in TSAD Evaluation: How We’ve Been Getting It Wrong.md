@@ -206,7 +206,9 @@ It would be desirable to **normalize** each individual value to the \[0, 1\] ran
 
 #### STEP 3: Convert the observed temporal distances into probabilities
 
-*   **Individual precision probability:** For the precision, the distance from $X$ to the ground truth $gt\_j$ is a random variable with a cumulative distribution function $F\_{p\_j}$. The survival function is given by $\\overline F\_{p\_j}(d) = 1- F\_{p\_j}(d-)$. Thus, the individual precision probability is given by $$P\_{\\text {precision }\_j}=\\frac{1}{\\left|\\operatorname{pred} \\cap I\_j\\right|} \\int\_{x \\in \\operatorname{pred} \\cap I\_j} \\bar{F}\_{\\text {precision }\_j}\\left(\\operatorname{dist}\\left(x, \\mathrm{gt}\_j\\right)\\right) d x $$
+*   **Individual precision probability:** For the precision, the distance from $X$ to the ground truth $gt\_j$ is a random variable with a cumulative distribution function $F\_{p\_j}$. The survival function is given by $\\overline F\_{p\_j}(d) = 1- F\_{p\_j}(d-)$. Thus, the individual precision probability is given by 
+
+$$P\_{\\text {precision }\_j}=\\frac{1}{\\left|\\operatorname{pred} \\cap I\_j\\right|} \\int\_{x \\in \\operatorname{pred} \\cap I\_j} \\bar{F}\_{\\text {precision }\_j}\\left(\\operatorname{dist}\\left(x, \\mathrm{gt}\_j\\right)\\right) d x $$
 
        **Explanation:**
 
